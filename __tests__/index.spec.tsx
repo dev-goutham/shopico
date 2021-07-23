@@ -6,6 +6,6 @@ import Index from "../pages/index"
 describe("<Index/>", () => {
 	it("Renders", () => {
 		render(<Index />)
-		expect(screen.getByText(/hello world/i)).toBeInTheDocument()
+		expect(screen.getByText(/hello universe/i)).toBeInTheDocument()
 	})
 })
