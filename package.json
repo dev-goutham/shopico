@@ -17,6 +17,7 @@
 		"build": "next build",
 		"start": "next start",
 		"clean": "rm -rf ./.next",
+		"test": "jest",
 		"prepare": "husky install",
 		"check-types": "tsc --project ./tsconfig.json --pretty --noEmit",
 		"check-format": "prettier --check . --ignore-path ./.gitignore",
@@ -25,16 +26,25 @@
 		"pre-commit": "npm run format && npm run check-types && npm run check-format && npm run check-lint"
 	},
 	"devDependencies": {
+		"@testing-library/dom": "^7.29.0",
+		"@testing-library/jest-dom": "^5.11.8",
+		"@testing-library/react": "^11.2.2",
+		"@testing-library/user-event": "^12.6.0",
+		"@types/jest": "^26.0.24",
 		"@types/node": "^16.4.1",
 		"@types/react": "^17.0.14",
 		"@types/react-dom": "^17.0.9",
 		"@typescript-eslint/eslint-plugin": "^4.28.4",
 		"@typescript-eslint/parser": "^4.28.4",
+		"babel-jest": "^27.0.6",
 		"eslint": "^7.31.0",
 		"eslint-config-next": "^11.0.1",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-react": "^7.24.0",
 		"husky": "^7.0.0",
+		"jest": "^27.0.6",
+		"jest-environment-jsdom": "^27.0.6",
+		"jest-environment-jsdom-global": "^2.0.4",
 		"prettier": "^2.3.2",
 		"typescript": "^4.3.5"
 	}
